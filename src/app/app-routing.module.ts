@@ -12,12 +12,7 @@ import { RegistrerComponent } from './login/registrer.component';
 
 const routes: Routes = [
 
-  {path: '', component: PagesComponent, children: [
-      {path: 'dashboard', component: DashboardComponent},
-      {path: 'progress', component: ProgressComponent},
-      {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
-    ]
-  },
+  {path: '', loadChildren: './pages/pages.module#PageModule'},
   {path: 'login', component: LoginComponent},
   {path: 'registrer', component: RegistrerComponent},
   {path: '**', component: NopagefoundComponent},
