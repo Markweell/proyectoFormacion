@@ -4,11 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [BreadcrumbsComponent, HeaderComponent, NopagefoundComponent, SidebarComponent],
   imports: [
-    CommonModule
+    CommonModule, RouterModule
   ],
   exports: [BreadcrumbsComponent, HeaderComponent, NopagefoundComponent, SidebarComponent],
   providers: [],

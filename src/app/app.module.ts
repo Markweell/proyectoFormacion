@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrerComponent } from './login/registrer.component';
 import { PageModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+import { ServiceModule } from './services/service.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
     BrowserModule,
     AppRoutingModule,
     PageModule,
-    SharedModule
+    SharedModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
