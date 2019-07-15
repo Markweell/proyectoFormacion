@@ -20,23 +20,14 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador leyenda = 'Barra 1' [progreso] = 'progreso1'></app-incrementador>
-              <!-- <div class="input-group">
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button" (click)="menosValor()"><i class="mdi mdi-minus"></i></button>
-                </span>
-                <input type="text" class="form-control" name='progreso' [(ngModel)]='progreso' >
-                <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button" (click)="masValor()"><i class="mdi mdi-plus"></i></button>
-                </span>
-              </div> -->
+                <app-incrementador (cambioValor)="progreso1 = $event" leyenda = 'Barra 1' [progreso] = 'progreso1'></app-incrementador>
             </div>
         </div>
     </div>
     <div class="col-6 ">
         <div class="card">
             <div class="card-body">
-                <app-incrementador leyenda = 'Barra 2' [progreso] = 'progreso2'></app-incrementador>
+                <app-incrementador (cambioValor)="progreso2 = $event" leyenda = 'Barra 2' [progreso] = 'progreso2'></app-incrementador>
             </div>
         </div>
     </div>

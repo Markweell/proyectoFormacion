@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrerComponent } from './login/registrer.component';
 import { PageModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
   declarations: [
