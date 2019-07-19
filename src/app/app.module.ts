@@ -9,6 +9,7 @@ import { RegistrerComponent } from './login/registrer.component';
 import { PageModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { ServiceModule } from './services/service.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ServiceModule } from './services/service.module';
     AppRoutingModule,
     PageModule,
     SharedModule,
-    ServiceModule
+    ServiceModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
